@@ -7,10 +7,8 @@ package com.example.demo;
 
 import java.util.List;
 import org.springframework.data.repository.Repository;
-/**
- *
- * @author lserrano
- */
+
+
 public interface PersonRepository extends Repository<Person, Integer> {
     List<Person>findAll();
     Person findOne(int id);
